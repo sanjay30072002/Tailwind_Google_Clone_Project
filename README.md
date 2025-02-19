@@ -11,5 +11,4 @@ This project was a great way to explore Tailwind’s utility-first approach and 
 
 It was a fun and insightful experience working with Tailwind, and I’m excited to apply it to more projects! 🚀
 
-Check it out here: [Your GitHub Link] 🔗
-Would love to hear your thoughts! #TailwindCSS #FrontendDevelopment #GoogleClone #WebDesign #CSS
+
