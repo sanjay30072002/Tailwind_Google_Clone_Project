@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body> 
+  <!--Header section-->
+  <div class="flex justify-end p-3 space-x-5 text-sm items-center">
+    <a class="hover:underline"  href="#">Gmail</a>
+    <a class="hover:underline" href="#">Images</a>
+    <diV class="p-2 hover:bg-slate-200 hover:rounded-full">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 2C5.10457 2 6 2.89543 6 4C6 5.10457 5.10457 6 4 6C2.89543 6 2 5.10457 2 4C2 2.89543 2.89543 2 4 2ZM12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2ZM22 4C22 2.89543 21.1046 2 20 2C18.8954 2 18 2.89543 18 4C18 5.10457 18.8954 6 20 6C21.1046 6 22 5.10457 22 4ZM4 10C5.10457 10 6 10.8954 6 12C6 13.1046 5.10457 14 4 14C2.89543 14 2 13.1046 2 12C2 10.8954 2.89543 10 4 10ZM14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12ZM20 10C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10ZM6 20C6 18.8954 5.10457 18 4 18C2.89543 18 2 18.8954 2 20C2 21.1046 2.89543 22 4 22C5.10457 22 6 21.1046 6 20ZM12 18C13.1046 18 14 18.8954 14 20C14 21.1046 13.1046 22 12 22C10.8954 22 10 21.1046 10 20C10 18.8954 10.8954 18 12 18ZM22 20C22 18.8954 21.1046 18 20 18C18.8954 18 18 18.8954 18 20C18 21.1046 18.8954 22 20 22C21.1046 22 22 21.1046 22 20Z" fill="#000000"/>
+        </svg>
+    </diV>
+    <button class="bg-blue-600 text-white rounded-3xl p-4 font-medium hover:shadow-lg">Sign in </button>
+  </div>
+
+<!--Logo section-->
+<div class="flex justify-center mt-5">
+    <img class="w-1/2 md:w-1/5 h-24"  src="../images/Google-Logo.wine.svg" alt="">
+</div>
+
+<!--Searchbox-->
+<div class="flex justify-center mt-5">
+<div class=" flex  justify-around border-2 border-gray-300 p-2 items-center rounded-full gap-4 hover:drop-shadow w-full md:w-1/2 mx-5">
+<img  class="h-4 w-4 fill-gray-400" src="../images/search.png" alt="">
+
+<div class="w-full">
+    <input id="searchbox" type="text" class="outline-0 bg-inherit">
+</div>
+<div class="flex">
+    <img class="h-6 w-6" src="../images/search_by_voice_icon.png" alt="">
+    <img class="h-6 w-6" src="../images/google_lens_icon.png" alt="">
+</div>
+</div>
+</div>
+
+<!--Trending searches-->
+<div  id="resultlist" class=" hidden flex justify-center">
+  <div class="w-full md:w-1/2 mx-5 shadow">
+    <div class="p-3">
+      <span class="text-gray-500">Trending searches</span>
+    </div>
+    <ul>
+     <li class="flex gap-4 p-2 items-center hover:bg-gray-100">
+      <svg class="h-5 w-5 fill-gray-400" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <title>ic_fluent_arrow_trending_24_regular</title>
+        <desc>Created with Sketch.</desc>
+        <g id="🔍-System-Icons" stroke="none" stroke-width="1" >
+            <g id="ic_fluent_arrow_trending_24_regular">
+                <path d="M13.748109,5.5 L21.3019242,5.50051747 L21.4021456,5.51444244 L21.4021456,5.51444244 L21.5009898,5.54204665 L21.5009898,5.54204665 L21.5612467,5.5675979 L21.5612467,5.5675979 C21.6405078,5.60246184 21.7147377,5.6531499 21.779948,5.71835585 L21.8206583,5.76240015 L21.8206583,5.76240015 L21.8642064,5.81878079 L21.8642064,5.81878079 L21.9183676,5.90890372 L21.9183676,5.90890372 L21.9570435,5.99922163 L21.9570435,5.99922163 L21.9762122,6.06329705 L21.9762122,6.06329705 L21.9898018,6.12730035 L21.9898018,6.12730035 L21.9991454,6.22150278 L21.9991454,6.22150278 L21.9996358,13.7538905 C21.9996358,14.168104 21.6638494,14.5038905 21.2496358,14.5038905 C20.86994,14.5038905 20.5561448,14.2217366 20.5064824,13.855661 L20.4996358,13.7538905 L20.4991881,8.059 L12.7803479,15.7792573 C12.5140876,16.0455355 12.0974196,16.069753 11.8038008,15.8519026 L11.7196801,15.7792854 L8.74919829,12.8089181 L3.27951815,18.2785982 C2.98662493,18.5714914 2.5117512,18.5714914 2.21885798,18.2785982 C1.95259142,18.0123316 1.92838537,17.5956679 2.14623983,17.3020565 L2.21885798,17.217938 L8.21885798,11.217938 C8.48512091,10.9516751 8.90177775,10.9274656 9.19538927,11.1453121 L9.27950793,11.2179278 L12.2499719,14.1882773 L19.4371881,7 L13.748109,7 C13.3684132,7 13.054618,6.71784612 13.0049556,6.35177056 L12.998109,6.25 C12.998109,5.87030423 13.2802629,5.55650904 13.6463384,5.50684662 L13.748109,5.5 Z" id="🎨-Color">
+    
+    </path>
+            </g>
+        </g>
+    </svg>
+    <span>Kulhad pizza couple video viral</span>
+     </li>
+     <li class="flex gap-4 p-2 items-center hover:bg-gray-100">
+      <svg class="h-5 w-5 fill-gray-400" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <title>ic_fluent_arrow_trending_24_regular</title>
+        <desc>Created with Sketch.</desc>
+        <g id="🔍-System-Icons" stroke="none" stroke-width="1">
+            <g id="ic_fluent_arrow_trending_24_regular" >
+                <path d="M13.748109,5.5 L21.3019242,5.50051747 L21.4021456,5.51444244 L21.4021456,5.51444244 L21.5009898,5.54204665 L21.5009898,5.54204665 L21.5612467,5.5675979 L21.5612467,5.5675979 C21.6405078,5.60246184 21.7147377,5.6531499 21.779948,5.71835585 L21.8206583,5.76240015 L21.8206583,5.76240015 L21.8642064,5.81878079 L21.8642064,5.81878079 L21.9183676,5.90890372 L21.9183676,5.90890372 L21.9570435,5.99922163 L21.9570435,5.99922163 L21.9762122,6.06329705 L21.9762122,6.06329705 L21.9898018,6.12730035 L21.9898018,6.12730035 L21.9991454,6.22150278 L21.9991454,6.22150278 L21.9996358,13.7538905 C21.9996358,14.168104 21.6638494,14.5038905 21.2496358,14.5038905 C20.86994,14.5038905 20.5561448,14.2217366 20.5064824,13.855661 L20.4996358,13.7538905 L20.4991881,8.059 L12.7803479,15.7792573 C12.5140876,16.0455355 12.0974196,16.069753 11.8038008,15.8519026 L11.7196801,15.7792854 L8.74919829,12.8089181 L3.27951815,18.2785982 C2.98662493,18.5714914 2.5117512,18.5714914 2.21885798,18.2785982 C1.95259142,18.0123316 1.92838537,17.5956679 2.14623983,17.3020565 L2.21885798,17.217938 L8.21885798,11.217938 C8.48512091,10.9516751 8.90177775,10.9274656 9.19538927,11.1453121 L9.27950793,11.2179278 L12.2499719,14.1882773 L19.4371881,7 L13.748109,7 C13.3684132,7 13.054618,6.71784612 13.0049556,6.35177056 L12.998109,6.25 C12.998109,5.87030423 13.2802629,5.55650904 13.6463384,5.50684662 L13.748109,5.5 Z" id="🎨-Color">
+    
+    </path>
+            </g>
+        </g>
+    </svg>
+    <span>Rohit sharma retirement rumour</span>
+     </li>
+     <li class="flex gap-4 p-2 items-center hover:bg-gray-100">
+      <svg class="h-5 w-5 fill-gray-400" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+        <title>ic_fluent_arrow_trending_24_regular</title>
+        <desc>Created with Sketch.</desc>
+        <g id="🔍-System-Icons" stroke="none" stroke-width="1">
+            <g id="ic_fluent_arrow_trending_24_regular">
+                <path d="M13.748109,5.5 L21.3019242,5.50051747 L21.4021456,5.51444244 L21.4021456,5.51444244 L21.5009898,5.54204665 L21.5009898,5.54204665 L21.5612467,5.5675979 L21.5612467,5.5675979 C21.6405078,5.60246184 21.7147377,5.6531499 21.779948,5.71835585 L21.8206583,5.76240015 L21.8206583,5.76240015 L21.8642064,5.81878079 L21.8642064,5.81878079 L21.9183676,5.90890372 L21.9183676,5.90890372 L21.9570435,5.99922163 L21.9570435,5.99922163 L21.9762122,6.06329705 L21.9762122,6.06329705 L21.9898018,6.12730035 L21.9898018,6.12730035 L21.9991454,6.22150278 L21.9991454,6.22150278 L21.9996358,13.7538905 C21.9996358,14.168104 21.6638494,14.5038905 21.2496358,14.5038905 C20.86994,14.5038905 20.5561448,14.2217366 20.5064824,13.855661 L20.4996358,13.7538905 L20.4991881,8.059 L12.7803479,15.7792573 C12.5140876,16.0455355 12.0974196,16.069753 11.8038008,15.8519026 L11.7196801,15.7792854 L8.74919829,12.8089181 L3.27951815,18.2785982 C2.98662493,18.5714914 2.5117512,18.5714914 2.21885798,18.2785982 C1.95259142,18.0123316 1.92838537,17.5956679 2.14623983,17.3020565 L2.21885798,17.217938 L8.21885798,11.217938 C8.48512091,10.9516751 8.90177775,10.9274656 9.19538927,11.1453121 L9.27950793,11.2179278 L12.2499719,14.1882773 L19.4371881,7 L13.748109,7 C13.3684132,7 13.054618,6.71784612 13.0049556,6.35177056 L12.998109,6.25 C12.998109,5.87030423 13.2802629,5.55650904 13.6463384,5.50684662 L13.748109,5.5 Z" id="🎨-Color">
+    
+    </path>
+            </g>
+        </g>
+    </svg>
+    <span>Virat kholi Konstas rivalry</span>
+     </li>
+    </ul>
+    
+  </div>
+</div>
+
+
+
+<!--Search button-->
+<div class="flex justify-center mt-5 gap-3">
+<button class="bg-gray-100 p-2 googlesearch hover:outline outline-gray-300 outline-1 rounded-md text-sm hover:shadow-lg">Google Search</button>
+<button class="bg-gray-100 p-2 hover:outline outline-gray-300 outline-1 rounded-md text-sm hover:shadow-lg">I'm feeling Lucky</button>
+
+</div>
+
+<!--Languages section-->
+
+<div class="flex gap-3 text-sm mx-5 mt-10 justify-center">
+  <div>
+    <span class="w-40">Google offered in:</span>
+  </div>
+<div class="text-blue-800 flex gap-2 flex-wrap">
+  <a class="hover:underline" href="#">हिन्दी</a>
+  <a  class="hover:underline" href="#">தமிழ்</a>
+  <a  class="hover:underline" href="#">English</a>
+  <a  class="hover:underline" href="#">తెలుగు</a>
+  <a  class="hover:underline" href="#">ಕನ್ನಡ</a>
+  <a  class="hover:underline" href="#">मराठी</a>
+  <a  class="hover:underline" href="#">English</a>
+  <a  class="hover:underline" href="#">తెలుగు</a>
+  <a  class="hover:underline" href="#">ಕನ್ನಡ</a>
+  <a  class="hover:underline" href="#">मराठी</a>
+</div>
+</div>
+
+<!--Footer-->
+
+<div class="fixed bottom-0 bg-gray-200 w-full p-3 text-gray-900 text-sm">
+  <div class="p-2 border-b border-gray-400">
+    <span>India</span>
+  </div>
+  <div class="p-2 flex flex-col md:flex-row md:justify-between">
+    <div class=" p-3 flex justify-center gap-5">
+      <span>About</span>
+      <span>Advertising</span>
+      <span>Business</span>
+      <span>How search works</span>
+    </div>
+    <div class="p-3 flex justify-center gap-5">
+      <span>Privacy</span>
+      <span>Terms</span>
+      <span>Settings</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById("searchbox")
+  .onfocus=function(){
+    document.getElementById("resultlist")
+    .classList.toggle("hidden")
+  }
+
+  document.getElementById("searchbox")
+  .onblur=function(){
+    document.getElementById("resultlist")
+    .classList.toggle("hidden")
+  }
+</script>
+
+</body>
+</html>
